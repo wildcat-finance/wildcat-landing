@@ -18,31 +18,11 @@ export default function Home() {
       </nav>
       <section className='h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 px-16'>
         <video
-          className='absolute inset-x-0 top-20 bottom-0 object-cover'
+          className='absolute inset-x-0 top-20 bottom-0 object-cover h-[calc(100%-80px)] min-w-full'
           autoPlay
           muted
           loop
         >
-          <source
-            src='/WILDCAT_TOP_BANNER_480.mp4'
-            type='video/mp4'
-            media='(max-width: 480px)'
-          />
-          <source
-            src='/WILDCAT_TOP_BANNER_480.webm'
-            type='video/webm'
-            media='(max-width: 480px)'
-          />
-          <source
-            src='/WILDCAT_TOP_BANNER_720.mp4'
-            type='video/mp4'
-            media='(max-width: 720px)'
-          />
-          <source
-            src='/WILDCAT_TOP_BANNER_720.webm'
-            type='video/webm'
-            media='(max-width: 720px)'
-          />
           <source src='/WILDCAT_TOP_BANNER_1080.mp4' type='video/mp4' />
           <source src='/WILDCAT_TOP_BANNER_1080.webm' type='video/webm' />
         </video>
