@@ -96,7 +96,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-1s ${
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-300ms ${
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
@@ -110,7 +110,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-2s ${
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-600ms ${
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
@@ -124,7 +124,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-3s ${
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-900ms ${
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
@@ -187,7 +187,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`col-span-4 opacity-0 animation-delay-1s ${
+              className={`col-span-4 opacity-0 animation-delay-300ms ${
                 scrolledPastWildcatBanking ? "fade-in" : ""
               }`}
             >
@@ -208,7 +208,7 @@ export default function Home() {
               </p>
             </div>
             <div
-              className={`col-span-4 opacity-0 animation-delay-2s ${
+              className={`col-span-4 opacity-0 animation-delay-600ms ${
                 scrolledPastWildcatBanking ? "fade-in" : ""
               }`}
             >
