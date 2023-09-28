@@ -1,6 +1,32 @@
+"use client";
+
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function Home() {
+  const { ref: refHowItWorks, inView: inViewHowItWorks } = useInView({
+    /* Optional options */
+    threshold: 0.8,
+  });
+  const { ref: refWildcatBanking, inView: inViewWildcatBanking } = useInView({
+    /* Optional options */
+    threshold: 0.8,
+  });
+  const [scrolledPastHowItWorks, setScrolledPastHowItWorks] = useState(false);
+  const [scrolledPastWildcatBanking, setScrolledPastWildcatBanking] =
+    useState(false);
+  useEffect(() => {
+    if (inViewHowItWorks) {
+      setScrolledPastHowItWorks(true);
+    }
+  }, [inViewHowItWorks]);
+  useEffect(() => {
+    if (inViewWildcatBanking) {
+      setScrolledPastWildcatBanking(true);
+    }
+  }, [inViewWildcatBanking]);
+
   return (
     <main className='flex min-h-screen flex-col'>
       <nav className='h-20 flex flex-row justify-between items-center bg-[#232323] px-8'>
@@ -50,8 +76,15 @@ export default function Home() {
         <h2 className='text-2xl py-10 md:py-20 text-center font-black'>
           How it works
         </h2>
-        <div className='grid grid-cols-12 gap-3 px-8 pb-16 max-w-7xl mx-auto'>
-          <div className='col-span-6 md:col-span-3'>
+        <div
+          ref={refHowItWorks}
+          className='grid grid-cols-12 gap-3 px-8 pb-16 max-w-7xl mx-auto'
+        >
+          <div
+            className={`col-span-6 md:col-span-3 opacity-0 ${
+              scrolledPastHowItWorks ? "fade-in" : ""
+            }`}
+          >
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               1
             </h3>
@@ -61,7 +94,11 @@ export default function Home() {
               they desire.
             </p>
           </div>
-          <div className='col-span-6 md:col-span-3'>
+          <div
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-1s ${
+              scrolledPastHowItWorks ? "fade-in" : ""
+            }`}
+          >
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               2
             </h3>
@@ -71,7 +108,11 @@ export default function Home() {
               capacity, reserve ratio, withdrawal cycles, and more.
             </p>
           </div>
-          <div className='col-span-6 md:col-span-3'>
+          <div
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-2s ${
+              scrolledPastHowItWorks ? "fade-in" : ""
+            }`}
+          >
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               3
             </h3>
@@ -81,7 +122,11 @@ export default function Home() {
               allowing them to lend on-chain.
             </p>
           </div>
-          <div className='col-span-6 md:col-span-3'>
+          <div
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-3s ${
+              scrolledPastHowItWorks ? "fade-in" : ""
+            }`}
+          >
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               4
             </h3>
@@ -116,8 +161,15 @@ export default function Home() {
             Wildcat banking: a historical tool for a modern age
           </h2>
 
-          <div className='flex flex-col md:grid grid-cols-12 gap-8'>
-            <div className='col-span-4'>
+          <div
+            ref={refWildcatBanking}
+            className='flex flex-col md:grid grid-cols-12 gap-8'
+          >
+            <div
+              className={`col-span-4 opacity-0 ${
+                scrolledPastWildcatBanking ? "fade-in" : ""
+              }`}
+            >
               <Image
                 className='mb-6'
                 src='/wildcat-symbol.png'
@@ -131,7 +183,11 @@ export default function Home() {
                 minimal back-office coordination needs.
               </p>
             </div>
-            <div className='col-span-4'>
+            <div
+              className={`col-span-4 opacity-0 animation-delay-1s ${
+                scrolledPastWildcatBanking ? "fade-in" : ""
+              }`}
+            >
               <Image
                 className='mb-6'
                 src='/wildcat-symbol.png'
@@ -145,7 +201,11 @@ export default function Home() {
                 minimal back-office coordination needs.
               </p>
             </div>
-            <div className='col-span-4'>
+            <div
+              className={`col-span-4 opacity-0 animation-delay-2s ${
+                scrolledPastWildcatBanking ? "fade-in" : ""
+              }`}
+            >
               <Image
                 className='mb-6'
                 src='/wildcat-symbol.png'
