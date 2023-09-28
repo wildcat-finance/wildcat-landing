@@ -178,7 +178,9 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h3>Flexible Borrowing for Liquidity Providers</h3>
+              <h3 className='font-black'>
+                Flexible Borrowing for Liquidity Providers
+              </h3>
               <p>
                 Empower liquidity provider to access inventory on-chain, with
                 minimal back-office coordination needs.
@@ -196,10 +198,13 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h3>Flexible Borrowing for Liquidity Providers</h3>
+              <h3 className='font-black'>
+                DAO Treasuries&apos; Diversification
+              </h3>
               <p>
-                Empower liquidity provider to access inventory on-chain, with
-                minimal back-office coordination needs.
+                DAOs with native tokens can utilize nonproductive assets in
+                yield-bearing credit facilities, improving their finances
+                without selling their core holdings.
               </p>
             </div>
             <div
@@ -214,10 +219,13 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h3>Flexible Borrowing for Liquidity Providers</h3>
+              <h3 className='font-black'>
+                Integrating Off-Chain Entities into the Blockchain
+              </h3>
               <p>
-                Empower liquidity provider to access inventory on-chain, with
-                minimal back-office coordination needs.
+                Enable off-chain entities to raise funds on-chain, bridging the
+                gap between traditional finance and decentralized lending
+                without the need for intermediaries.
               </p>
             </div>
           </div>
