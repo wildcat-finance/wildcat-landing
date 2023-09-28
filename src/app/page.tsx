@@ -245,7 +245,7 @@ export default function Home() {
       </section>
       <footer className='bg-[#232323] text-white'>
         <div className='max-w-7xl mx-auto px-8 py-12'>
-          <div className='grid grid-cols-12 gap-6'>
+          <div className='flex flex-col md:grid grid-cols-12 gap-6'>
             <div className='col-span-6'>
               <Image
                 src='/wildcat-logo-white.png'
