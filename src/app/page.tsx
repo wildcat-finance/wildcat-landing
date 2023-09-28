@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className='flex min-h-screen flex-col'>
-      <nav className='h-20 flex flex-row justify-between items-center bg-[#232323] px-10'>
+      <nav className='h-20 flex flex-row justify-between items-center bg-[#232323] px-8'>
         <div>
           <Image src='/logo.png' alt='logo' width={150} height={51} />
         </div>
@@ -47,7 +47,7 @@ export default function Home() {
           <source src='/WILDCAT_TOP_BANNER_1080.webm' type='video/webm' />
         </video>
         <div className='z-10 flex flex-col gap-8'>
-          <h1 className='text-5xl/[50px] text-center'>
+          <h1 className='text-3xl md:text-5xl/[50px] text-center'>
             Unlocking flexible fixed-rate credit, on-chain.
           </h1>
           <p className='text-center'>
@@ -56,7 +56,7 @@ export default function Home() {
             ERC20 token they require.
           </p>
 
-          <div className='flex flex-row gap-4 items-center justify-center'>
+          <div className='flex flex-col md:flex-row gap-4 items-center justify-center'>
             <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
               Become a Borrower
             </button>
@@ -67,9 +67,11 @@ export default function Home() {
         </div>
       </section>
       <section className='bg-white text-black'>
-        <h2 className='text-2xl py-20 text-center font-black'>How it works</h2>
+        <h2 className='text-2xl py-10 md:py-20 text-center font-black'>
+          How it works
+        </h2>
         <div className='grid grid-cols-12 gap-3 px-8 pb-16 max-w-7xl mx-auto'>
-          <div className='col-span-3'>
+          <div className='col-span-6 md:col-span-3'>
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               1
             </h3>
@@ -79,7 +81,7 @@ export default function Home() {
               they desire.
             </p>
           </div>
-          <div className='col-span-3'>
+          <div className='col-span-6 md:col-span-3'>
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               2
             </h3>
@@ -89,7 +91,7 @@ export default function Home() {
               capacity, reserve ratio, withdrawal cycles, and more.
             </p>
           </div>
-          <div className='col-span-3'>
+          <div className='col-span-6 md:col-span-3'>
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               3
             </h3>
@@ -99,7 +101,7 @@ export default function Home() {
               allowing them to lend on-chain.
             </p>
           </div>
-          <div className='col-span-3'>
+          <div className='col-span-6 md:col-span-3'>
             <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
               4
             </h3>
@@ -128,13 +130,13 @@ export default function Home() {
           </button>
         </div>
       </section>
-      <section className='bg-white text-black py-12'>
+      <section className='bg-white text-black py-12 px-8'>
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-5xl text-black text-center pb-12'>
             Wildcat banking: a historical tool for a modern age
           </h2>
 
-          <div className='grid grid-cols-12 gap-8'>
+          <div className='flex flex-col md:grid grid-cols-12 gap-8'>
             <div className='col-span-4'>
               <Image
                 className='mb-6'
@@ -180,21 +182,27 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className='bg-[#E9E8DD] text-black'>
-        <h2 className='text-center text-2xl py-20'>
+      <section className='bg-[#E9E8DD] text-black px-8'>
+        <h2 className='text-center text-2xl py-10 md:py-20'>
           Transparency as a core value
         </h2>
-        <div className='grid grid-cols-12 gap-4 max-w-3xl mx-auto h-[calc(315px+40px)] pb-10'>
-          <div className='col-span-6 rounded-xl bg-white p-6 h-full'>
+        <div className='flex flex-col md:grid grid-cols-12 gap-4 max-w-3xl mx-auto pb-10'>
+          <div className='col-span-12 md:col-span-6 rounded-xl bg-white p-6 md:h-[calc(315px+40px)]'>
             <p>
               Borrowers and Lenders can visualize each Vault’s transaction log,
               providing a transparent and comprehensive record of all activities
               and interactions.
             </p>
           </div>
-          <div className='col-span-6 rounded-xl bg-white p-6 h-full flex flex-col items-center justify-between'>
+          <div className='col-span-12 md:col-span-6 rounded-xl bg-white p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
             <span>Audited by</span>
-            <Image src='/code4rena.png' alt='logo' width={200} height={39} />
+            <Image
+              src='/code4rena.png'
+              alt='logo'
+              width={200}
+              height={39}
+              className='py-6'
+            />
             <button className='bg-black rounded-full w-[158px] py-2 text-white'>
               Read Reports
             </button>
@@ -205,13 +213,13 @@ export default function Home() {
         className='flex flex-col items-center justify-center bg-cover bg-no-repeat'
         style={{ backgroundImage: "url(/flowers-bg.jpeg)" }}
       >
-        <div className='max-w-7xl mx-auto pt-12 pb-20'>
+        <div className='max-w-7xl mx-auto pt-12 pb-20 px-8'>
           <h3 className='font-black text-2xl'>Manifesto</h3>
           <h2 className='font-extrabold text-5xl py-12'>
             Wildcat addresses the gaps of existing lending protocols
           </h2>
 
-          <div className='grid grid-cols-12 gap-8'>
+          <div className='flex flex-col md:grid grid-cols-12 gap-8'>
             <div className='col-span-6'>
               <p className='mb-8'>
                 Freeing borrowers to choose their desired underlying asset,
@@ -235,6 +243,66 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <footer className='bg-[#232323] text-white'>
+        <div className='max-w-7xl mx-auto px-8 py-12'>
+          <div className='grid grid-cols-12 gap-6'>
+            <div className='col-span-6'>
+              <Image
+                src='/wildcat-logo-white.png'
+                alt='logo'
+                height={83}
+                width={119}
+              />
+            </div>
+            <div className='col-span-6 grid grid-cols-12'>
+              <div className='col-span-4'>
+                <ul>
+                  <li className='py-3 font-black'>Site Map</li>
+                  <li className='py-3'>Lend</li>
+                  <li className='py-3'>Borrow</li>
+                  <li className='py-3'>Use Cases</li>
+                  <li className='py-3'>Docs</li>
+                  <li className='py-3'>Blog</li>
+                  <li className='py-3'>About</li>
+                </ul>
+              </div>
+              <div className='col-span-4'>
+                <ul>
+                  <li className='py-3 font-black'>Docs</li>
+                  <li className='py-3'>Whitepaper</li>
+                  <li className='py-3'>GitBook</li>
+                  <li className='py-3'>Media Kit</li>
+                  <li className='py-3'>Audits</li>
+                </ul>
+              </div>
+              <div className='col-span-4'>
+                <ul>
+                  <li className='py-3 font-black'>Legal</li>
+                  <li className='py-3'>Privacy Policy</li>
+                  <li className='py-3'>Legal Notice</li>
+                  <li className='py-3'>Terms of Use</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className='max-w-7xl mx-auto px-8 pb-20'>
+          <div className='flex flex-row gap-6'>
+            <a href='#' target='_blank' rel='noreferrer noopener'>
+              <Image src='/telegram.png' alt='logo' height={28} width={33} />
+            </a>
+            <a href='#' target='_blank' rel='noreferrer noopener'>
+              <Image src='/linkedin.png' alt='logo' height={28} width={28} />
+            </a>
+            <a href='#' target='_blank' rel='noreferrer noopener'>
+              <Image src='/medium.png' alt='logo' height={28} width={49} />
+            </a>
+            <a href='#' target='_blank' rel='noreferrer noopener'>
+              <Image src='/x.png' alt='logo' height={28} width={28} />
+            </a>
+          </div>
+        </div>
+      </footer>
     </main>
   );
 }
