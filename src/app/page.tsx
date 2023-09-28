@@ -31,7 +31,7 @@ export default function Home() {
     <main className='flex min-h-screen flex-col'>
       <nav className='h-20 flex flex-row justify-between items-center bg-[#232323] px-8'>
         <div>
-          <Image src='/logo.png' alt='logo' width={150} height={51} />
+          <img src='/logo.png' alt='logo' width={150} height={51} />
         </div>
         <div className='flex flex-row items-center gap-6'>
           <a href='#' className='text-white'>
@@ -42,9 +42,10 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <section className='h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 px-16'>
+      <section className='h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 px-16 relative'>
+        <div className=''></div>
         <video
-          className='absolute inset-x-0 top-20 bottom-0 object-cover h-[calc(100%-80px)] min-w-full'
+          className='absolute inset-x-0 bottom-0 object-cover h-full min-w-full'
           autoPlay
           muted
           loop
@@ -52,7 +53,7 @@ export default function Home() {
           <source src='/WILDCAT_TOP_BANNER_1080.mp4' type='video/mp4' />
           <source src='/WILDCAT_TOP_BANNER_1080.webm' type='video/webm' />
         </video>
-        <div className='z-10 flex flex-col gap-8'>
+        <div className='z-10 flex flex-col gap-8 max-w-[50rem]'>
           <h1 className='text-3xl md:text-5xl/[50px] text-center'>
             Unlocking flexible fixed-rate credit, on-chain.
           </h1>
@@ -170,7 +171,7 @@ export default function Home() {
                 scrolledPastWildcatBanking ? "fade-in" : ""
               }`}
             >
-              <Image
+              <img
                 className='mb-6'
                 src='/wildcat-symbol.png'
                 alt='logo'
@@ -188,7 +189,7 @@ export default function Home() {
                 scrolledPastWildcatBanking ? "fade-in" : ""
               }`}
             >
-              <Image
+              <img
                 className='mb-6'
                 src='/wildcat-symbol.png'
                 alt='logo'
@@ -206,7 +207,7 @@ export default function Home() {
                 scrolledPastWildcatBanking ? "fade-in" : ""
               }`}
             >
-              <Image
+              <img
                 className='mb-6'
                 src='/wildcat-symbol.png'
                 alt='logo'
@@ -236,7 +237,7 @@ export default function Home() {
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-white p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
             <span>Audited by</span>
-            <Image
+            <img
               src='/code4rena.png'
               alt='logo'
               width={200}
@@ -287,7 +288,7 @@ export default function Home() {
         <div className='max-w-7xl mx-auto px-8 py-12'>
           <div className='flex flex-col md:grid grid-cols-12 gap-6'>
             <div className='col-span-6'>
-              <Image
+              <img
                 src='/wildcat-logo-white.png'
                 alt='logo'
                 height={83}
@@ -329,16 +330,16 @@ export default function Home() {
         <div className='max-w-7xl mx-auto px-8 pb-20'>
           <div className='flex flex-row gap-6'>
             <a href='#' target='_blank' rel='noreferrer noopener'>
-              <Image src='/telegram.png' alt='logo' height={28} width={33} />
+              <img src='/telegram.png' alt='logo' height={28} width={33} />
             </a>
             <a href='#' target='_blank' rel='noreferrer noopener'>
-              <Image src='/linkedin.png' alt='logo' height={28} width={28} />
+              <img src='/linkedin.png' alt='logo' height={28} width={28} />
             </a>
             <a href='#' target='_blank' rel='noreferrer noopener'>
-              <Image src='/medium.png' alt='logo' height={28} width={49} />
+              <img src='/medium.png' alt='logo' height={28} width={49} />
             </a>
             <a href='#' target='_blank' rel='noreferrer noopener'>
-              <Image src='/x.png' alt='logo' height={28} width={28} />
+              <img src='/x.png' alt='logo' height={28} width={28} />
             </a>
           </div>
         </div>
