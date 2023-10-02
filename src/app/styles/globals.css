@@ -58,21 +58,29 @@ body {
 }
 
 h1 {
-  @apply text-white text-3xl md:text-5xl/[50px] text-center;
+  @apply font-bold text-white text-3xl md:text-5xl/[50px] text-center;
 }
 
 h2 {
-  @apply text-2xl py-10 md:py-20 font-bold;
+  @apply font-bold text-2xl py-8 md:py-12;
 }
 
 h3 {
   @apply font-bold;
 }
 
+h4 {
+  @apply font-bold;
+}
+
 p {
-  @apply text-base font-normal;
+  @apply font-normal text-base;
 }
 
 button {
-  @apply rounded-full px-4 py-2 font-bold text-sm;
+  @apply font-bold rounded-full px-4 py-2 text-sm;
+}
+
+li {
+  @apply py-3;
 }

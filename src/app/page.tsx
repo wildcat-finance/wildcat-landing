@@ -31,18 +31,18 @@ export default function Home() {
     <main className='flex min-h-screen flex-col'>
       <nav className='h-20 flex flex-row justify-between items-center bg-black px-8'>
         <div>
-          <img src='/logo.png' alt='logo' width={150} height={51} />
+          <img src='/wildcat-logo-white.svg' alt='logo' width={150} height={51} />
         </div>
         <div className='flex flex-row items-center gap-6'>
           <a href='#' className='text-white'>
             Docs
           </a>
-          <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
+          <button className='bg-white text-black'>
             Launch app
           </button>
         </div>
       </nav>
-      <section className='h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 px-16 relative'>
+      <section className='h-[calc(100vh-180px)] flex flex-col items-center justify-center gap-8 px-16 relative'>
         <div className=''></div>
         <video
           className='absolute inset-x-0 bottom-0 object-cover h-full min-w-full'
@@ -54,7 +54,7 @@ export default function Home() {
           <source src='/WILDCAT_TOP_BANNER_1080.webm' type='video/webm' />
         </video>
         <div className='z-10 flex flex-col gap-8 max-w-[50rem]'>
-          <h1 className=''>
+          <h1>
             Unlocking flexible fixed-rate credit, on-chain.
           </h1>
           <p className='text-center text-white max-w-[40rem] mx-auto'>
@@ -84,10 +84,10 @@ export default function Home() {
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
-            <h3 className='text-2xl border-y border-border-primary mb-4 font-black'>
+            <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               1
             </h3>
-            <h4 className='font-extrabold'>Create your vault</h4>
+            <h4>Create your vault</h4>
             <p>
               Whitelisted borrowers can create custom vaults for any ERC20 token
               they desire.
@@ -98,10 +98,10 @@ export default function Home() {
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
-            <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
+            <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-extrabold'>
               2
             </h3>
-            <h4 className='font-extrabold'>Choose your terms</h4>
+            <h4>Choose your terms</h4>
             <p>
               Specify your vault’s terms at deployment, including APR, vault
               capacity, reserve ratio, withdrawal cycles, and more.
@@ -112,10 +112,10 @@ export default function Home() {
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
-            <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
+            <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-extrabold'>
               3
             </h3>
-            <h4 className='font-extrabold'>Lend and earn securely</h4>
+            <h4>Lend and earn securely</h4>
             <p>
               Borrowers can whitelist lenders to interact with their vaults,
               allowing them to lend on-chain.
@@ -126,10 +126,10 @@ export default function Home() {
               scrolledPastHowItWorks ? "fade-in" : ""
             }`}
           >
-            <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-black'>
+            <h3 className='text-2xl border-y border-[#c8c7bf] mb-4 font-extrabold'>
               4
             </h3>
-            <h4 className='font-extrabold'>Adjust your Vault’s conditions </h4>
+            <h4>Adjust your Vault’s conditions </h4>
             <p>
               Borrowers can change open vault’s APRs based on their needs,
               automatically impacting the reserve ratio.
@@ -176,9 +176,9 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h3>
+              <h4>
                 Flexible Borrowing for Liquidity Providers
-              </h3>
+              </h4>
               <p>
                 Empower liquidity provider to access inventory on-chain, with
                 minimal back-office coordination needs.
@@ -196,9 +196,9 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h3>
+              <h4>
                 DAO Treasuries&apos; Diversification
-              </h3>
+              </h4>
               <p>
                 DAOs with native tokens can utilize nonproductive assets in
                 yield-bearing credit facilities, improving their finances
@@ -217,9 +217,9 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h3>
+              <h4>
                 Integrating Off-Chain Entities into the Blockchain
-              </h3>
+              </h4>
               <p>
                 Enable off-chain entities to raise funds on-chain, bridging the
                 gap between traditional finance and decentralized lending
@@ -250,7 +250,7 @@ export default function Home() {
               height={39}
               className='py-6'
             />
-            <button className='bg-black rounded-full w-[158px] py-2 text-white'>
+            <button className='bg-black text-white'>
               Read Reports
             </button>
           </div>
@@ -295,7 +295,7 @@ export default function Home() {
           <div className='flex flex-col md:grid grid-cols-12 gap-6'>
             <div className='col-span-6'>
               <img
-                src='/wildcat-logo-white.png'
+                src='/wildcat-logo-white-square.svg'
                 alt='logo'
                 height={83}
                 width={119}
@@ -304,30 +304,30 @@ export default function Home() {
             <div className='col-span-6 grid grid-cols-12'>
               <div className='col-span-4'>
                 <ul>
-                  <li className='py-3 font-black'>Site Map</li>
-                  <li className='py-3'>Lend</li>
-                  <li className='py-3'>Borrow</li>
-                  <li className='py-3'>Use Cases</li>
-                  <li className='py-3'>Docs</li>
-                  <li className='py-3'>Blog</li>
-                  <li className='py-3'>About</li>
+                  <li className='py-3 font-bold'>Site Map</li>
+                  <li>Lend</li>
+                  <li>Borrow</li>
+                  <li>Use Cases</li>
+                  <li>Docs</li>
+                  <li>Blog</li>
+                  <li>About</li>
                 </ul>
               </div>
               <div className='col-span-4'>
                 <ul>
-                  <li className='py-3 font-black'>Docs</li>
-                  <li className='py-3'>Whitepaper</li>
-                  <li className='py-3'>GitBook</li>
-                  <li className='py-3'>Media Kit</li>
-                  <li className='py-3'>Audits</li>
+                  <li className='py-3 font-bold'>Docs</li>
+                  <li>Whitepaper</li>
+                  <li>GitBook</li>
+                  <li>Media Kit</li>
+                  <li>Audits</li>
                 </ul>
               </div>
               <div className='col-span-4'>
                 <ul>
-                  <li className='py-3 font-black'>Legal</li>
-                  <li className='py-3'>Privacy Policy</li>
-                  <li className='py-3'>Legal Notice</li>
-                  <li className='py-3'>Terms of Use</li>
+                  <li className='py-3 font-bold'>Legal</li>
+                  <li>Privacy Policy</li>
+                  <li>Legal Notice</li>
+                  <li>Terms of Use</li>
                 </ul>
               </div>
             </div>
