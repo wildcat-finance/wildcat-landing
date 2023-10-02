@@ -34,7 +34,7 @@ export default function Home() {
                     <img src='/wildcat-logo-white.svg' alt='logo' width={150} height={51}/>
                 </div>
                 <div className='flex flex-row items-center gap-6'>
-                    <a href='#' className='text-white'>
+                    <a href='#' className='text-white hidden sm:block'>
                         Docs
                     </a>
                     <button className='bg-white text-black'>
@@ -146,10 +146,10 @@ export default function Home() {
                 </h2>
                 <div className='text-black text-center font-medium py-6'>Apply as</div>
                 <div className='flex flex-row gap-4 items-center justify-center pb-20'>
-                    <button className='bg-black text-white'>
+                    <button className='bg-black text-white w-[12rem]'>
                         Borrower
                     </button>
-                    <button className='bg-black text-white'>
+                    <button className='bg-black text-white w-[12rem]'>
                         Lender
                     </button>
                 </div>
