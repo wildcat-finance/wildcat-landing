@@ -1,3 +1,5 @@
+@import './color.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -53,4 +55,24 @@ body {
 
 .animation-delay-1200ms {
   animation-delay: 1200ms;
+}
+
+h1 {
+  @apply text-white text-3xl md:text-5xl/[50px] text-center;
+}
+
+h2 {
+  @apply text-2xl py-10 md:py-20 font-bold;
+}
+
+h3 {
+  @apply font-bold;
+}
+
+p {
+  @apply text-base font-normal;
+}
+
+button {
+  @apply rounded-full px-4 py-2 font-bold text-sm;
 }

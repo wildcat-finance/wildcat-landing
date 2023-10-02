@@ -1,0 +1,30 @@
+:root,
+html[data-theme="light"] {
+    --primary: #FBC0DC;
+    --secondary: #C1FBC0;
+    --black: #232323;
+    --white: #fff;
+    --border-primary: #C8C7BE;
+    --bg-card: #FFFEF2;
+
+    --bg-primary: #ffffff;
+
+    --bg-card-hover: #ffffff;
+    --bg-form: #f3f3f3;
+    --bg-input: #ffffff;
+    --btn-primary: #F8F0F0;
+    --btn-primary-active: #C1FBC0;
+    --btn-secondary: #F8F0F0;
+    --btn-secondary-active: #C1FBC0;
+    --progress: #C1FBC0;
+    --progress-active: #FBC0DC;
+    --txt-primary: #000000;
+    --txt-hover: #C0EDFB;
+    --txt-inverted: #ffffff;
+    --highlight: #C1FBC0;
+    --info: #D1D4EE;
+    --error: #CA0C0C;
+    --warning: #CA670C;
+    --success: #C1FBC0;
+    --tree: 'url(/img/tree-bg.png)';
+}

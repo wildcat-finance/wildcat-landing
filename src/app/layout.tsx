@@ -1,4 +1,4 @@
-import "./globals.css";
+import "@/app/styles/globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
@@ -10,8 +10,18 @@ const lineca = localFont({
       style: "normal",
     },
     {
-      path: "../../public/fonts/F37LinecaTrial-Medium.otf",
+      path: "../../public/fonts/F37LinecaTrial-Light.otf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/F37LinecaTrial-Regular.otf",
       weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/F37LinecaTrial-Medium.otf",
+      weight: "500",
       style: "normal",
     },
     {
