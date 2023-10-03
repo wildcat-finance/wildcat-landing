@@ -12,11 +12,9 @@ export default function ResponsiveVideo(props: ResponsiveVideoProps) {
   return (
     <>
       <video {...rest}>
-        {width <= 768 && <source src={props.mobileVid} type={props.type} />}
-        {width > 768 && width < 1200 && (
-          <source src={props.tabletVid} type={props.type} />
-        )}
-        {width >= 1200 && <source src={props.desktopVid} type={props.type} />}
+        {width <= 768 && <source src={mobileVid} type={type} />}
+        {width > 768 && width < 1200 && <source src={tabletVid} type={type} />}
+        {width >= 1200 && <source src={desktopVid} type={type} />}
       </video>
     </>
   );
