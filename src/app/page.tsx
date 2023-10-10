@@ -282,7 +282,7 @@ export default function Home() {
           <div className='flex flex-col md:grid grid-cols-12 gap-8'>
             <div className='col-span-6'>
               <p className='mb-8 text-white'>
-                We believe that sometimes, we've got to trust.
+                We believe that sometimes, we have to trust.
               </p>
               <button className='bg-white text-black'>
                 Read our Manifesto
