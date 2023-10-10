@@ -44,7 +44,7 @@ export default function Home() {
             Docs
           </a>
           <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-            Launch app
+            Launch App
           </button>
         </div>
       </nav>
@@ -62,13 +62,19 @@ export default function Home() {
           type='video/mp4'
         />
         <div className='z-10 flex flex-col gap-8 max-w-[50rem]'>
-          <h1 className='text-3xl md:text-5xl/[50px] text-center'>
-            Unlocking flexible fixed-rate credit, on-chain.
+          <h1 className='text-3xl md:text-4xl/[50px] text-center'>
+            Fixed rates. Flexible everything else.
           </h1>
           <p className='text-center text-white max-w-[40rem] mx-auto'>
-            Wildcat is a new DeFi lending protocol that empowers borrowsers to
-            set their own terms while offering the flexibility to borrow any
-            ERC20 token they require.
+            Wildcat is an Ethereum protocol that enables undercollateralised credit facilities
+            for arbitrary assets which a borrower can parameterise however they wish.
+          </p>
+           <p className='text-center text-white max-w-[40rem] mx-auto'>
+            Borrowers select their own set of lenders, and need answer to no third parties.
+            Lenders enjoy novel interest rate and withdrawal mechanisms as protection.
+          </p>
+           <p className='text-center text-white max-w-[40rem] mx-auto'>
+            Designed by - and for - sophisticated actors in the financial markets space.
           </p>
 
           <div className='flex flex-col md:flex-row gap-4 items-center justify-center'>
@@ -76,13 +82,13 @@ export default function Home() {
               Become a Borrower
             </button>
             <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-              Launch app
+              Launch App
             </button>
           </div>
         </div>
       </section>
       <section className='bg-bg-card text-black'>
-        <h2 className='text-center'>How it works</h2>
+        <h2 className='text-center'>How Wildcat Works</h2>
         <div
           ref={refHowItWorks}
           className='grid grid-cols-12 gap-3 px-8 pb-16 max-w-7xl mx-auto'
@@ -95,10 +101,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               1
             </h3>
-            <h4>Create your vault</h4>
+            <h4>Borrower Onboards</h4>
             <p>
-              Whitelisted borrowers can create custom vaults for any ERC20 token
-              they desire.
+              Borrowers onboard with Wildcat and are granted permission to deploy 
+              market controllers supporting their desired use-case.
             </p>
           </div>
           <div
@@ -109,10 +115,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               2
             </h3>
-            <h4 className='font-extrabold'>Choose your terms</h4>
+            <h4 className='font-extrabold'>Market Deployed</h4>
             <p>
-              Specify your vault’s terms at deployment, including APR, vault
-              capacity, reserve ratio, withdrawal cycles, and more.
+              Borrowers specify the terms of their market at deployment, including APR, vault
+              capacity, reserve ratio, withdrawal cycle length, and more.
             </p>
           </div>
           <div
@@ -123,10 +129,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               3
             </h3>
-            <h4 className='font-extrabold'>Lend and earn securely</h4>
+            <h4 className='font-extrabold'>Lenders Approved</h4>
             <p>
-              Borrowers can whitelist lenders to interact with their vaults,
-              allowing them to lend on-chain.
+              Borrowers determine which lender addresses can interact with their markets,
+              allowing them to deposit assets in exchange for market tokens.
             </p>
           </div>
           <div
@@ -137,10 +143,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               4
             </h3>
-            <h4>Adjust your Vault’s conditions </h4>
+            <h4>The Rest Is Up To You</h4>
             <p>
-              Borrowers can change open vault’s APRs based on their needs,
-              automatically impacting the reserve ratio.
+              Market tokens are rebasing 1:1 against the underlying, freely transferable
+              and interest-bearing (and we can tell where the yield comes from for a change). 
             </p>
           </div>
         </div>
@@ -160,9 +166,9 @@ export default function Home() {
         />
         <div className='z-10 flex flex-col'>
           <h2 className='text-5xl text-black text-center py-6 pt-20'>
-            Interested in Wildcat?
+            Interested?
           </h2>
-          <span className='text-black text-center py-6'>Apply as</span>
+          <span className='text-black text-center py-6'>Find out more as a:</span>
           <div className='flex flex-row gap-6 items-center justify-center pb-20'>
             <button className='bg-black rounded-full w-[158px] py-2'>
               Borrower
@@ -176,7 +182,7 @@ export default function Home() {
       <section className='bg-bg-card text-black px-8 pb-12'>
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-black text-center'>
-            Wildcat banking: a historical tool for a modern age
+            A simple premise with complex applications
           </h2>
           <div
             ref={refWildcatBanking}
@@ -194,10 +200,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Flexible Borrowing for Liquidity Providers</h4>
+              <h4>Flexible Borrowing for Market Makers</h4>
               <p>
-                Empower liquidity provider to access inventory on-chain, with
-                minimal back-office coordination needs.
+                Empower market makers to access inventory on-chain, allowing them
+                to demonstrate their commitment to transparency of terms.
               </p>
             </div>
             <div
@@ -212,11 +218,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>DAO Treasuries&apos; Diversification</h4>
+              <h4>Eliminate Back-Office Costs on Loans</h4>
               <p>
-                DAOs with native tokens can utilize nonproductive assets in
-                yield-bearing credit facilities, improving their finances
-                without selling their core holdings.
+                The flexibility of Wildcat market parameters combined with full visibility
+                into actions taken and interest accrued can reduce administrative costs. 
               </p>
             </div>
             <div
@@ -231,28 +236,28 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Integrating Off-Chain Entities into the Blockchain</h4>
+              <h4>Yield-Bearing Variants of Nonproductive Assets</h4>
               <p>
-                Enable off-chain entities to raise funds on-chain, bridging the
-                gap between traditional finance and decentralized lending
-                without the need for intermediaries.
+                The rebasing nature of Wildcat market tokens representing claims on escrowed assets means
+                that assets such as USDC can bear interest on-chain.
               </p>
             </div>
           </div>
         </div>
       </section>
       <section className='bg-[#E9E8DD] text-black px-8'>
-        <h2 className='text-center'>Transparency as a core value</h2>
+        <h2 className='text-center'>Transparency And Security As Core Values</h2>
         <div className='flex flex-col md:grid grid-cols-12 gap-4 max-w-3xl mx-auto pb-10'>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)]'>
             <p>
-              Borrowers and Lenders can visualize each Vault’s transaction log,
-              providing a transparent and comprehensive record of all activities
-              and interactions.
+              Bringing credit agreements on-chain in a transparent manner is the entire point.
+              Each market provides an dashboard of all of its parameters, alongside
+              a transaction log acting as a comprehensive record of every single historical and
+              current interaction since market launch.
             </p>
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
-            <h3>Audited by</h3>
+            <h3>Security Support Provided By:</h3>
             <img
               src='/code4rena.png'
               alt='logo'
@@ -269,16 +274,15 @@ export default function Home() {
         style={{ backgroundImage: "url(/flowers-bg.jpeg)" }}
       >
         <div className='max-w-7xl mx-auto px-8 pb-8 md:pb-12'>
-          <h2 className='text-white text-2xl'>Manifesto</h2>
+          <h2 className='text-white text-2xl'>The Purpose</h2>
           <h3 className='text-white text-5xl max-w-2xl pb-8 md:pb-12'>
-            Wildcat addresses the gaps of existing lending protocols
+            Wildcat provides an unprecedented level of freedom for on-chain facilitation of credit.
           </h3>
 
           <div className='flex flex-col md:grid grid-cols-12 gap-8'>
             <div className='col-span-6'>
               <p className='mb-8 text-white'>
-                Freeing borrowers to choose their desired underlying asset,
-                interest rate methodology, and without the use of middlemen.
+                We believe that sometimes, we've got to trust.
               </p>
               <button className='bg-white text-black'>
                 Read our Manifesto
@@ -286,13 +290,18 @@ export default function Home() {
             </div>
             <div className='col-span-6'>
               <p className={"text-white"}>
-                Wildcat is primarily aimed at organizations wishing to borrow
-                funds in the medium-term, but can reasonably be extended to
-                parties such as DeFi protocols wishing to raise funds without
-                the consequences of selling a native-token filled treasury into
-                the ground to do so. As a protocol that is - in its current form
-                - reliant upon counterparty selection by borrowers, Wildcat is
-                fundamentally permissioned in nature.
+                We believe that people can be trusted to decide who to lend to or borrow from.
+              </p>
+              <p className={"text-white"}>
+                We believe that people can be trusted to select the credit terms best for them.
+              </p>
+              <p className={"text-white"}>
+                We believe that people can be trusted with the freedom to transact.
+              </p>
+              <br>
+              </br>
+              <p className={"text-white"}>
+                The Wildcat Protocol - banking, but worse.
               </p>
             </div>
           </div>
@@ -320,7 +329,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      How it works
+                      How It Works
                     </a>
                   </li>
                   <li>
@@ -330,7 +339,7 @@ export default function Home() {
                   </li>
                   <li>
                     <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Use cases
+                      Use Cases
                     </a>
                   </li>
                   <li>
@@ -347,7 +356,7 @@ export default function Home() {
               </div>
               <div className='col-span-4'>
                 <ul>
-                  <li className='py-3 font-bold'>Docs</li>
+                  <li className='py-3 font-bold'>Documentation</li>
                   <li>
                     <a
                       href={
@@ -360,14 +369,14 @@ export default function Home() {
                     </a>
                   </li>
                   <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"https://wildcat-protocol.gitbook.io"} target={"_blank"} rel='noopener noreferrer'>
                       Gitbook
                     </a>
                   </li>
                   {/*<li>Media Kit</li>*/}
                   <li>
                     <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Audits
+                      Security
                     </a>
                   </li>
                 </ul>
@@ -397,10 +406,10 @@ export default function Home() {
         </div>
         <div className='max-w-7xl mx-auto px-8 pb-20'>
           <div className='flex flex-row gap-6'>
-            <a href='#' target='_blank' rel='noreferrer noopener'>
+            <a href='https://t.me/+DcgjEiWaDpVkNTE8' target='_blank' rel='noreferrer noopener'>
               <img src='/telegram.png' alt='logo' height={28} width={33} />
             </a>
-            <a href='#' target='_blank' rel='noreferrer noopener'>
+            <a href='https://www.linkedin.com/company/98564013' target='_blank' rel='noreferrer noopener'>
               <img src='/linkedin.png' alt='logo' height={28} width={28} />
             </a>
             <a href='#' target='_blank' rel='noreferrer noopener'>
