@@ -70,10 +70,6 @@ export default function Home() {
             for arbitrary assets which a borrower can parameterise however they wish.
           </p>
            <p className='text-center text-white max-w-[40rem] mx-auto'>
-            Borrowers select their own set of lenders, and need answer to no third parties.
-            Lenders enjoy novel interest rate and withdrawal mechanisms as protection.
-          </p>
-           <p className='text-center text-white max-w-[40rem] mx-auto'>
             Designed by - and for - sophisticated actors in the financial markets space.
           </p>
 
