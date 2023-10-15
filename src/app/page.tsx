@@ -206,7 +206,7 @@ export default function Home() {
               />
               <h4>Flexible Borrowing for Arbitrary Purposes</h4>
               <p>
-                Whether you're a market maker raising inventory, a fund seeking exposure or
+                Whether you are a market maker raising inventory, a fund seeking exposure or
                 a DAO diversifying their assets, Wildcat markets can fit your purpose.
               </p>
             </div>
@@ -255,8 +255,8 @@ export default function Home() {
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)]'>
             <p>
               Bringing credit agreements on-chain in a transparent manner is the entire point.
-              Wildcat grants users access to a detailed view of each of their markets' parameters
-               and transaction logs to monitor their status in real time.
+              Wildcat grants users access to a detailed view of each of their market parameters
+              and transaction logs to monitor their status in real time.
             </p>
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
