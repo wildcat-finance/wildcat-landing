@@ -40,11 +40,11 @@ export default function Home() {
           />
         </div>
         <div className='flex flex-row items-center gap-6'>
-          <a href='#' className='text-white'>
-            Docs
+          <a href='https://wildcat-protocol.gitbook.io' target="_blank" className='text-white'>
+            Documentation
           </a>
           <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-            Launch App
+            App Soon™
           </button>
         </div>
       </nav>
@@ -66,19 +66,22 @@ export default function Home() {
             Fixed rates. Flexible everything else.
           </h1>
           <p className='text-center text-white max-w-[40rem] mx-auto'>
-            Wildcat is an Ethereum protocol that enables undercollateralised credit facilities
-            for arbitrary assets which a borrower can parameterise however they wish.
+            Wildcat is an Ethereum protocol enabling undercollateralised on-chain credit facilities
+            which a borrower can parameterise however they wish. Lenders benefit from novel interest
+            rate and withdrawal mechanisms.
           </p>
            <p className='text-center text-white max-w-[40rem] mx-auto'>
             Designed by - and for - sophisticated actors in the financial markets space.
           </p>
 
           <div className='flex flex-col md:flex-row gap-4 items-center justify-center'>
+            <a href='https://rvficirw76q.typeform.com/to/FKBzhnmo' target="_blank">
+              <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
+                Become a Borrower
+              </button>
+            </a>
             <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-              Become a Borrower
-            </button>
-            <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-              Launch App
+              App Soon™
             </button>
           </div>
         </div>
@@ -103,6 +106,7 @@ export default function Home() {
               market controllers supporting their desired use-case.
             </p>
           </div>
+          
           <div
             className={`col-span-6 md:col-span-3 opacity-0 animation-delay-300ms ${
               scrolledPastHowItWorks ? "fade-in" : ""
@@ -166,19 +170,23 @@ export default function Home() {
           </h2>
           <span className='text-black text-center py-6'>Find out more as a:</span>
           <div className='flex flex-row gap-6 items-center justify-center pb-20'>
-            <button className='bg-black rounded-full w-[158px] py-2'>
-              Borrower
-            </button>
-            <button className='bg-black rounded-full w-[158px] py-2'>
-              Lender
-            </button>
+            <a href='https://rvficirw76q.typeform.com/to/FKBzhnmo' target="_blank">
+              <button className='bg-black text-white rounded-full w-[158px] py-2'>
+                Borrower
+              </button>
+            </a>
+            <a href='https://rvficirw76q.typeform.com/to/FKBzhnmo' target="_blank">
+              <button className='bg-black text-white rounded-full w-[158px] py-2'>
+                Lender
+              </button>
+            </a>
           </div>
         </div>
       </section>
       <section className='bg-bg-card text-black px-8 pb-12'>
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-black text-center'>
-            A simple premise with complex applications
+            A Simple Premise With Countless Benefits
           </h2>
           <div
             ref={refWildcatBanking}
@@ -196,10 +204,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Flexible Borrowing for Market Makers</h4>
+              <h4>Flexible Borrowing for Arbitrary Purposes</h4>
               <p>
-                Empower market makers to access inventory on-chain, allowing them
-                to demonstrate their commitment to transparency of terms.
+                Whether you're a market maker raising inventory, a fund seeking exposure or
+                a DAO diversifying their assets, Wildcat markets can fit your purpose.
               </p>
             </div>
             <div
@@ -232,10 +240,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Yield-Bearing Variants of Nonproductive Assets</h4>
+              <h4>Simple Recording of On-Chain Debt</h4>
               <p>
-                The rebasing nature of Wildcat market tokens representing claims on escrowed assets means
-                that assets such as USDC can bear interest on-chain.
+                The rebasing nature of Wildcat market tokens allows lenders to know exactly how much
+                they are owed without worrying about redemption exchange rates.
               </p>
             </div>
           </div>
@@ -247,9 +255,8 @@ export default function Home() {
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)]'>
             <p>
               Bringing credit agreements on-chain in a transparent manner is the entire point.
-              Each market provides an dashboard of all of its parameters, alongside
-              a transaction log acting as a comprehensive record of every single historical and
-              current interaction since market launch.
+              Wildcat grants users access to a detailed view of each of their markets' parameters
+               and transaction logs to monitor their status in real time.
             </p>
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
@@ -261,7 +268,9 @@ export default function Home() {
               height={39}
               className='py-6'
             />
-            <button className='bg-black text-white'>Read Reports</button>
+            <a href='https://wildcat-protocol.gitbook.io/wildcat/security-measures/code-security-reviews' target="_blank">
+              <button className='bg-black text-white'>Read Reports</button>
+            </a>
           </div>
         </div>
       </section>
@@ -278,21 +287,23 @@ export default function Home() {
           <div className='flex flex-col md:grid grid-cols-12 gap-8'>
             <div className='col-span-6'>
               <p className='mb-8 text-white'>
-                We believe that sometimes, we have to trust.
+                We have some utilitarian beliefs about how on-chain credit should work.
               </p>
-              <button className='bg-white text-black'>
-                Read our Manifesto
-              </button>
+              <a href='https://medium.com/@wildcatprotocol/the-wildcat-manifesto-db23d4b9484d' target="_blank">
+                <button className='bg-white text-black'>
+                  Read our Manifesto
+                </button>
+              </a>
             </div>
             <div className='col-span-6'>
               <p className={"text-white"}>
-                We believe that people can be trusted to decide who to lend to or borrow from.
+               We believe that people should be able to decide who to lend to or borrow from.
               </p>
               <p className={"text-white"}>
-                We believe that people can be trusted to select the credit terms best for them.
+               We believe that people should be able to decide credit terms that suit them.
               </p>
               <p className={"text-white"}>
-                We believe that people can be trusted with the freedom to transact.
+                We believe that people should be trusted with the freedom to transact.
               </p>
               <br>
               </br>
@@ -317,41 +328,6 @@ export default function Home() {
             <div className='col-span-6 grid grid-cols-12'>
               <div className='col-span-4'>
                 <ul>
-                  <li className='py-3 font-bold'>Navigate</li>
-                  <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Overview
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      How It Works
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Apply
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Use Cases
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Audits
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
-                      Manifesto
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div className='col-span-4'>
-                <ul>
                   <li className='py-3 font-bold'>Documentation</li>
                   <li>
                     <a
@@ -371,7 +347,7 @@ export default function Home() {
                   </li>
                   {/*<li>Media Kit</li>*/}
                   <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"https://wildcat-protocol.gitbook.io/wildcat/security-measures"} target={"_blank"} rel='noopener noreferrer'>
                       Security
                     </a>
                   </li>
@@ -381,17 +357,17 @@ export default function Home() {
                 <ul>
                   <li className='py-3 font-bold'>Legal</li>
                   <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
                       Privacy Policy
                     </a>
                   </li>
                   <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
                       Legal Notice
                     </a>
                   </li>
                   <li>
-                    <a href={"#"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
                       Terms of Use
                     </a>
                   </li>
@@ -408,7 +384,7 @@ export default function Home() {
             <a href='https://www.linkedin.com/company/98564013' target='_blank' rel='noreferrer noopener'>
               <img src='/linkedin.png' alt='logo' height={28} width={28} />
             </a>
-            <a href='#' target='_blank' rel='noreferrer noopener'>
+            <a href='https://medium.com/@wildcatprotocol' target='_blank' rel='noreferrer noopener'>
               <img src='/medium.png' alt='logo' height={28} width={49} />
             </a>
             <a
