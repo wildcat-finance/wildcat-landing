@@ -287,7 +287,7 @@ export default function Home() {
           <div className='flex flex-col md:grid grid-cols-12 gap-8'>
             <div className='col-span-6'>
               <p className='mb-8 text-white'>
-                We believe that sometimes, we have to trust.
+                We have some utilitarian beliefs about how on-chain credit should work.
               </p>
               <a href='https://medium.com/@wildcatprotocol/the-wildcat-manifesto-db23d4b9484d' target="_blank">
                 <button className='bg-white text-black'>
@@ -300,7 +300,7 @@ export default function Home() {
                We believe that people should be able to decide who to lend to or borrow from.
               </p>
               <p className={"text-white"}>
-               We believe that people should be able to decide the credit terms that fit them best.
+               We believe that people should be able to decide credit terms that suit them.
               </p>
               <p className={"text-white"}>
                 We believe that people should be trusted with the freedom to transact.
