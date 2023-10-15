@@ -66,8 +66,9 @@ export default function Home() {
             Fixed rates. Flexible everything else.
           </h1>
           <p className='text-center text-white max-w-[40rem] mx-auto'>
-            Wildcat is an Ethereum protocol that enables undercollateralised credit facilities
-            for arbitrary assets which a borrower can parameterise however they wish.
+            Wildcat is an Ethereum protocol enabling undercollateralised on-chain credit facilities
+            which a borrower can parameterise however they wish. Lenders benefit from novel interest
+            rate and withdrawal mechanisms.
           </p>
            <p className='text-center text-white max-w-[40rem] mx-auto'>
             Designed by - and for - sophisticated actors in the financial markets space.
@@ -105,6 +106,7 @@ export default function Home() {
               market controllers supporting their desired use-case.
             </p>
           </div>
+          
           <div
             className={`col-span-6 md:col-span-3 opacity-0 animation-delay-300ms ${
               scrolledPastHowItWorks ? "fade-in" : ""
@@ -184,7 +186,7 @@ export default function Home() {
       <section className='bg-bg-card text-black px-8 pb-12'>
         <div className='max-w-7xl mx-auto'>
           <h2 className='text-black text-center'>
-            A simple premise with complex applications
+            A Simple Premise With Countless Benefits
           </h2>
           <div
             ref={refWildcatBanking}
@@ -202,10 +204,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Flexible Borrowing for Market Makers</h4>
+              <h4>Flexible Borrowing for Arbitrary Purposes</h4>
               <p>
-                Empower market makers to access inventory on-chain, allowing them
-                to demonstrate their commitment to transparency of terms.
+                Whether you're a market maker raising inventory, a fund seeking exposure or
+                a DAO diversifying their assets, Wildcat markets can fit your purpose.
               </p>
             </div>
             <div
@@ -238,10 +240,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Yield-Bearing Variants of Nonproductive Assets</h4>
+              <h4>Simple Recording of On-Chain Debt</h4>
               <p>
-                The rebasing nature of Wildcat market tokens representing claims on escrowed assets means
-                that assets such as USDC can bear interest on-chain.
+                The rebasing nature of Wildcat market tokens allows lenders to know exactly how much
+                they are owed without worrying about redemption exchange rates.
               </p>
             </div>
           </div>
@@ -253,9 +255,8 @@ export default function Home() {
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)]'>
             <p>
               Bringing credit agreements on-chain in a transparent manner is the entire point.
-              Each market provides an dashboard of all of its parameters, alongside
-              a transaction log acting as a comprehensive record of every single historical and
-              current interaction since market launch.
+              Wildcat grants users access to a detailed view of each of their markets' parameters
+               and transaction logs to monitor their status in real time.
             </p>
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
@@ -296,13 +297,13 @@ export default function Home() {
             </div>
             <div className='col-span-6'>
               <p className={"text-white"}>
-                We believe that people can be trusted to decide who to lend to or borrow from.
+               We believe that people should be able to decide who to lend to or borrow from.
               </p>
               <p className={"text-white"}>
-                We believe that people can be trusted to select the credit terms best for them.
+               We believe that people should be able to decide the credit terms that fit them best.
               </p>
               <p className={"text-white"}>
-                We believe that people can be trusted with the freedom to transact.
+                We believe that people should be trusted with the freedom to transact.
               </p>
               <br>
               </br>
