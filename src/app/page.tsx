@@ -222,10 +222,10 @@ export default function Home() {
                 width={50}
                 height={80}
               />
-              <h4>Eliminate Back-Office Costs on Loans</h4>
+              <h4>Increase Back Office Efficiency</h4>
               <p>
-                The flexibility of Wildcat market parameters combined with full visibility
-                into actions taken and interest accrued can reduce administrative costs. 
+              By bringing flexible-term loans on-chain, you reduce time dealing with third parties,
+              reducing back office costs and increasing capacity to manage more loans.
               </p>
             </div>
             <div
@@ -357,18 +357,13 @@ export default function Home() {
                 <ul>
                   <li className='py-3 font-bold'>Legal</li>
                   <li>
-                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"https://wildcat-protocol.gitbook.io/wildcat/legal/protocol-ui-privacy-policy"} target={"_blank"} rel='noopener noreferrer'>
                       Privacy Policy
                     </a>
                   </li>
                   <li>
                     <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
-                      Legal Notice
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
-                      Terms of Use
+                      Service Agreement
                     </a>
                   </li>
                 </ul>
