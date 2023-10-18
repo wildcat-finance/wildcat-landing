@@ -4,6 +4,7 @@
 import ResponsiveVideo from "./components/responsiveVideo";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import Carousel from './components/carousel';
 
 export default function Home() {
   const { ref: refHowItWorks, inView: inViewHowItWorks } = useInView({
@@ -190,62 +191,65 @@ export default function Home() {
           </h2>
           <div
             ref={refWildcatBanking}
-            className='flex flex-col md:grid grid-cols-12 gap-8'
+            className='flex flex-col'
           >
-            <div
-              className={`col-span-4 opacity-0 ${
-                scrolledPastWildcatBanking ? "fade-in" : ""
-              }`}
-            >
-              <img
-                className='mb-6'
-                src='/wildcat-symbol.png'
-                alt='logo'
-                width={50}
-                height={80}
-              />
-              <h4>Flexible Borrowing for Arbitrary Purposes</h4>
-              <p>
-                Whether you are a market maker raising inventory, a fund seeking exposure or
-                a DAO diversifying their assets, Wildcat markets can fit your purpose.
-              </p>
-            </div>
-            <div
-              className={`col-span-4 opacity-0 animation-delay-300ms ${
-                scrolledPastWildcatBanking ? "fade-in" : ""
-              }`}
-            >
-              <img
-                className='mb-6'
-                src='/wildcat-symbol.png'
-                alt='logo'
-                width={50}
-                height={80}
-              />
-              <h4>Eliminate Back-Office Costs on Loans</h4>
-              <p>
-                The flexibility of Wildcat market parameters combined with full visibility
-                into actions taken and interest accrued can reduce administrative costs. 
-              </p>
-            </div>
-            <div
-              className={`col-span-4 opacity-0 animation-delay-600ms ${
-                scrolledPastWildcatBanking ? "fade-in" : ""
-              }`}
-            >
-              <img
-                className='mb-6'
-                src='/wildcat-symbol.png'
-                alt='logo'
-                width={50}
-                height={80}
-              />
-              <h4>Simple Recording of On-Chain Debt</h4>
-              <p>
-                The rebasing nature of Wildcat market tokens allows lenders to know exactly how much
-                they are owed without worrying about redemption exchange rates.
-              </p>
-            </div>
+            <Carousel>
+
+              <div
+                className={`min-w-[320px] opacity-0 ${
+                  scrolledPastWildcatBanking ? "fade-in" : ""
+                }`}
+              >
+                <img
+                  className='mb-6'
+                  src='/wildcat-symbol.png'
+                  alt='logo'
+                  width={50}
+                  height={80}
+                />
+                <h4>Flexible Borrowing for Arbitrary Purposes</h4>
+                <p>
+                  Whether you are a market maker raising inventory, a fund seeking exposure or
+                  a DAO diversifying their assets, Wildcat markets can fit your purpose.
+                </p>
+              </div>
+              <div
+                className={`min-w-[320px] opacity-0 animation-delay-300ms ${
+                  scrolledPastWildcatBanking ? "fade-in" : ""
+                }`}
+              >
+                <img
+                  className='mb-6'
+                  src='/wildcat-symbol.png'
+                  alt='logo'
+                  width={50}
+                  height={80}
+                />
+                <h4>Eliminate Back-Office Costs on Loans</h4>
+                <p>
+                  The flexibility of Wildcat market parameters combined with full visibility
+                  into actions taken and interest accrued can reduce administrative costs. 
+                </p>
+              </div>
+              <div
+                className={`min-w-[320px] opacity-0 animation-delay-600ms ${
+                  scrolledPastWildcatBanking ? "fade-in" : ""
+                }`}
+              >
+                <img
+                  className='mb-6'
+                  src='/wildcat-symbol.png'
+                  alt='logo'
+                  width={50}
+                  height={80}
+                />
+                <h4>Simple Recording of On-Chain Debt</h4>
+                <p>
+                  The rebasing nature of Wildcat market tokens allows lenders to know exactly how much
+                  they are owed without worrying about redemption exchange rates.
+                </p>
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>
