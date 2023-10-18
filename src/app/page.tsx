@@ -393,18 +393,13 @@ export default function Home() {
                 <ul>
                   <li className='py-3 font-bold'>Legal</li>
                   <li>
-                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
+                    <a href={"https://wildcat-protocol.gitbook.io/wildcat/legal/protocol-ui-privacy-policy"} target={"_blank"} rel='noopener noreferrer'>
                       Privacy Policy
                     </a>
                   </li>
                   <li>
                     <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
-                      Legal Notice
-                    </a>
-                  </li>
-                  <li>
-                    <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
-                      Terms of Use
+                      Service Agreement
                     </a>
                   </li>
                 </ul>
