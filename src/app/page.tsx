@@ -91,7 +91,7 @@ export default function Home() {
         <h2 className='text-center'>How Wildcat Works</h2>
         <div
           ref={refHowItWorks}
-          className='grid grid-cols-12 gap-3 px-8 pb-16 max-w-7xl mx-auto'
+          className='flex grid-cols-12 gap-3 px-8 pb-16 max-w-7xl mx-auto'
         >
           <div
             className={`col-span-6 md:col-span-3 opacity-0 ${
@@ -148,6 +148,20 @@ export default function Home() {
             <p>
               Market tokens are rebasing 1:1 against the underlying, freely transferable
               and interest-bearing (and we can tell where the yield comes from for a change). 
+            </p>
+          </div>
+
+          <div
+            className={`col-span-6 md:col-span-3 opacity-0 animation-delay-900ms ${
+              scrolledPastHowItWorks ? "fade-in" : ""
+            }`}
+          >
+            <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
+              5
+            </h3>
+            <h4>Lorem Ipsum Dolor Sit Amet</h4>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis, justo eu commodo gravida, massa elit ultricies mi...  
             </p>
           </div>
         </div>
@@ -247,6 +261,24 @@ export default function Home() {
                 <p>
                   The rebasing nature of Wildcat market tokens allows lenders to know exactly how much
                   they are owed without worrying about redemption exchange rates.
+                </p>
+              </div>
+
+              <div
+                className={`min-w-[320px] opacity-0 animation-delay-600ms ${
+                  scrolledPastWildcatBanking ? "fade-in" : ""
+                }`}
+              >
+                <img
+                  className='mb-6'
+                  src='/wildcat-symbol.png'
+                  alt='logo'
+                  width={50}
+                  height={80}
+                />
+                <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis, justo eu commodo gravida, massa elit ultricies mi...  
                 </p>
               </div>
             </Carousel>
