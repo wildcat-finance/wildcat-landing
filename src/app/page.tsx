@@ -280,7 +280,7 @@ export default function Home() {
                 <h4>Greater Visibility, Fewer Surprises</h4>
                 <p>
                 The digital asset industry is underpinned by loans affecting large groups of people
-                which have terms known only to a few. Wildcat markets bring these into the light.
+                with terms known only to a few. Wildcat markets bring these into the light.
                 </p>
               </div>
 
