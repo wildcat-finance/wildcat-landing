@@ -161,8 +161,8 @@ export default function Home() {
             </h3>
             <h4 className='font-extrabold'>The Rest Is Up To You</h4>
             <p>
-            By design, Wildcat cannot intervene in existing markets. Optional legal agreements are
-            available for protection between the parties.
+            Borrowers can adjust the APR and capacity of their markets according to their
+            needs, while lenders are able to accept new terms or exit their position.
             </p>
           </div>
         </div>
@@ -280,7 +280,7 @@ export default function Home() {
                 <h4>Greater Visibility, Fewer Surprises</h4>
                 <p>
                 The digital asset industry is underpinned by loans affecting large groups of people
-                which have terms known only to a few. Wildcat markets bring these into the light.
+                with terms known only to a few. Wildcat markets bring these into the light.
                 </p>
               </div>
 
@@ -325,9 +325,16 @@ export default function Home() {
             </div>
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
-            <h3>Security Support Provided By:</h3>
+            <h3>Code Reviews and Ongoing Protection By:</h3>
             <img
               src='/code4rena.png'
+              alt='logo'
+              width={200}
+              height={39}
+              className='py-6'
+            />
+            <img
+              src='/immunefi.png'
               alt='logo'
               width={200}
               height={39}
