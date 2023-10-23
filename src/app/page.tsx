@@ -326,20 +326,24 @@ export default function Home() {
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
             <h3>Code Reviews and Ongoing Protection By:</h3>
-            <img
-              src='/code4rena.png'
-              alt='logo'
-              width={200}
-              height={39}
-              className='py-6'
-            />
-            <img
-              src='/immunefi.png'
-              alt='logo'
-              width={200}
-              height={39}
-              className='py-6'
-            />
+            <a href='https://code4rena.com' target='_blank'>
+              <img
+                src='/code4rena.png'
+                alt='logo'
+                width={200}
+                height={39}
+                className='py-6'
+              />
+            </a>
+            <a href='https://immunefi.com' target='_blank'>
+              <img
+                src='/immunefi.png'
+                alt='logo'
+                width={200}
+                height={39}
+                className='py-6'
+              />
+            </a>
             <a href='https://wildcat-protocol.gitbook.io/wildcat/security-measures/code-security-reviews' target="_blank">
               <button className='bg-black text-white'>Read Reports</button>
             </a>
