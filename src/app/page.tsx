@@ -101,10 +101,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               1
             </h3>
-            <h4>Borrower Onboards</h4>
+            <h4 className='font-extrabold'>Borrower Onboarding</h4>
             <p>
-              Borrowers onboard with Wildcat and are granted permission to deploy 
-              market controllers supporting their desired use-case.
+              Borrower sends Wildcat an onboarding request, and goes through
+              a protocol KYC process to get an address authorised.
             </p>
           </div>
           
@@ -116,10 +116,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               2
             </h3>
-            <h4 className='font-extrabold'>Market Deployed</h4>
+            <h4 className='font-extrabold'>New Market Deployment</h4>
             <p>
-              Borrowers specify the terms of their market at deployment, including APR, vault
-              capacity, reserve ratio, withdrawal cycle length, and more.
+              Borrowers specify terms of their markets at deployment: APR, maximum to
+              borrow, reserve ratio, withdrawal cycle length, and more.
             </p>
           </div>
           <div
@@ -130,10 +130,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               3
             </h3>
-            <h4 className='font-extrabold'>Lenders Approved</h4>
+            <h4 className='font-extrabold'>Lender Authorisation</h4>
             <p>
-              Borrowers determine which lender addresses can interact with their markets,
-              allowing them to deposit assets in exchange for market tokens.
+              Borrowers determine which addresses can lend to their markets.
+              Wildcat does not constrain the lender selection process.
             </p>
           </div>
           <div
@@ -144,10 +144,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               4
             </h3>
-            <h4>The Rest Is Up To You</h4>
+            <h4 className='font-extrabold'>Lenders Deposit Assets</h4>
             <p>
-              Market tokens are rebasing 1:1 against the underlying, freely transferable
-              and interest-bearing (and we can tell where the yield comes from for a change). 
+            Lenders deposit their assets as credit, receiving interest-bearing tokens.
+            Exiting lenders queue withdrawal requests for the borrower to fulfil.
             </p>
           </div>
 
@@ -159,9 +159,10 @@ export default function Home() {
             <h3 className='text-2xl border-y border-border-primary mb-4 font-extrabold'>
               5
             </h3>
-            <h4>Lorem Ipsum Dolor Sit Amet</h4>
+            <h4 className='font-extrabold'>The Rest Is Up To You</h4>
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis, justo eu commodo gravida, massa elit ultricies mi...  
+            By design, Wildcat cannot intervene in existing markets. Optional legal agreements are
+            available for protection between the parties.
             </p>
           </div>
         </div>
@@ -260,7 +261,7 @@ export default function Home() {
                 <h4>Simple Recording of On-Chain Debt</h4>
                 <p>
                   The rebasing nature of Wildcat market tokens allows lenders to know exactly how much
-                  they are owed without worrying about redemption exchange rates.
+                  they are owed at any given time by simply checking their wallet balance.
                 </p>
               </div>
 
@@ -276,9 +277,29 @@ export default function Home() {
                   width={50}
                   height={80}
                 />
-                <h4>Lorem Ipsum Dolor Sit Amet</h4>
+                <h4>Greater Visibility, Fewer Surprises</h4>
                 <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus iaculis, justo eu commodo gravida, massa elit ultricies mi...  
+                The digital asset industry is underpinned by loans affecting large groups of people
+                which have terms known only to a few. Wildcat markets bring these into the light.
+                </p>
+              </div>
+
+              <div
+                className={`min-w-[320px] opacity-0 animation-delay-600ms ${
+                  scrolledPastWildcatBanking ? "fade-in" : ""
+                }`}
+              >
+                <img
+                  className='mb-6'
+                  src='/wildcat-symbol.png'
+                  alt='logo'
+                  width={50}
+                  height={80}
+                />
+                <h4>A Reputational System Bootstrap</h4>
+                <p>
+                Good-faith engagement with Wildcat markets - without the oversight of a protocol
+                dictating your terms - acts as a signal to identify responsible actors.
                 </p>
               </div>
             </Carousel>
@@ -292,8 +313,16 @@ export default function Home() {
             <p>
               Bringing credit agreements on-chain in a transparent manner is the entire point.
               Wildcat grants users access to a detailed view of each of their market parameters
-              and transaction logs to monitor their status in real time.
+              and logs for real-time monitoring.
             </p>
+            <div className='items-center'>
+              <img
+                src='/transparency_mascot.png'
+                alt='logo'
+                width={211}
+                height={80}
+              />
+            </div>
           </div>
           <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)] flex flex-col items-center justify-between'>
             <h3>Security Support Provided By:</h3>
