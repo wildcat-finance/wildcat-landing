@@ -56,6 +56,7 @@ export default function Home() {
                     </button>
                 </div>
             </nav>
+
             <section className='h-[calc(100vh-80px)] flex flex-col items-center justify-center gap-8 px-8 sm:px-16 relative'>
                 <ResponsiveVideo
                     preload='auto'
@@ -94,10 +95,11 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
             <section className='bg-bg-card text-black'>
                 <h2 className='text-center'>How Wildcat Works</h2>
-
-                <div ref={refHowItWorks} className='grid grid-cols-1 sm:grid-cols-3 gap-3 px-4 sm:px-8 pb-8 max-w-7xl mx-auto'>
+                <div ref={refHowItWorks}></div>
+                <div className='grid grid-cols-1 sm:grid-cols-3 gap-3 px-4 sm:px-8 pb-8 max-w-7xl mx-auto'>
 
                   <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"0ms"} position={"1"}
                               title={"Borrower Onboarding"}
