@@ -105,23 +105,23 @@ export default function Home() {
                               title={"Borrower Onboarding"}
                               text={"Borrower sends Wildcat an onboarding request, and goes through a protocol KYC process to get an address authorised to deploy markets."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"300ms"} position={"2"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"200ms"} position={"2"}
                                 title={"New Market Deployment"}
                                 text={"Borrowers specify terms of their markets at deployment: APR, maximum to borrow, reserve ratio, withdrawal cycle length, and more."}/>
 
-                  <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"600ms"} position={"3"}
+                  <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"400ms"} position={"3"}
                               title={"Lender Authorisation"}
                               text={"Borrowers determine which addresses can lend to their markets. Wildcat does not constrain the lender selection process, deferring this to the borrower."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"900ms"} position={"4"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"800ms"} position={"4"}
                                 title={"Lenders Deposit Assets"}
                                 text={"Lenders deposit their assets as credit, receiving interest-bearing debt tokens. These tokens are transferable: store/use them however you wish."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1200ms"} position={"5"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1000ms"} position={"5"}
                                 title={"Borrowers Utilise Credit"}
                                 text={"Borrowers can now utilise a proportion of the credit extended to them, returning assets when called upon by lenders making withdrawal requests."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1500ms"} position={"6"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1200ms"} position={"6"}
                                 title={"The Rest Is Up To You"}
                                 text={"Borrowers can adjust the APR and capacity of their markets according to their needs, subject to existing debt and liquid asset amounts in market reserves."}/>
 
