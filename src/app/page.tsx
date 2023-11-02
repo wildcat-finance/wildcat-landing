@@ -184,7 +184,7 @@ export default function Home() {
                     <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)]'>
                         <p>
                             Bringing credit agreements on-chain in a transparent manner is the entire point.
-                            Wildcat grants users access to a detailed view of each of their market parameters
+                            Wildcat grants users access to a detailed view of all of their market parameters
                             and logs for real-time monitoring.
                         </p>
                         <div className='items-center'>
