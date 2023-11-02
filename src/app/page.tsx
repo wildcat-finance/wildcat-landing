@@ -103,7 +103,7 @@ export default function Home() {
 
                   <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"0ms"} position={"1"}
                               title={"Borrower Onboarding"}
-                              text={"Borrower sends Wildcat an onboarding request, and goes through a protocol KYC process to get an address authorised."}/>
+                              text={"Borrower sends Wildcat an onboarding request, and goes through a protocol KYC process to get an address authorised to deploy markets."}/>
 
                     <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"300ms"} position={"2"}
                                 title={"New Market Deployment"}
@@ -111,15 +111,19 @@ export default function Home() {
 
                   <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"600ms"} position={"3"}
                               title={"Lender Authorisation"}
-                              text={"Borrowers determine which addresses can lend to their markets. Wildcat does not constrain the lender selection process."}/>
+                              text={"Borrowers determine which addresses can lend to their markets. Wildcat does not constrain the lender selection process, deferring this to the borrower."}/>
 
                     <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"900ms"} position={"4"}
                                 title={"Lenders Deposit Assets"}
-                                text={"Lenders deposit their assets as credit, receiving interest-bearing tokens. Exiting lenders queue withdrawal requests for the borrower to fulfil."}/>
+                                text={"Lenders deposit their assets as credit, receiving interest-bearing debt tokens. These tokens are transferable: store/use them however you wish."}/>
 
                     <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1200ms"} position={"5"}
+                                title={"Borrowers Utilise Credit"}
+                                text={"Borrowers can now utilise a proportion of the credit extended to them, returning assets when called upon by lenders making withdrawal requests."}/>
+
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1200ms"} position={"6"}
                                 title={"The Rest Is Up To You"}
-                                text={"Borrowers can adjust the APR and capacity of their markets according to their needs, while lenders are able to accept new terms or exit their position."}/>
+                                text={"Borrowers can adjust the APR and capacity of their markets according to their needs, subject to existing debt and liquid asset amounts in market reserves."}/>
 
                 </div>
             </section>
@@ -160,15 +164,15 @@ export default function Home() {
             <section className='bg-bg-card text-black px-4 sm:px-8 pb-12'>
                 <div className='max-w-7xl mx-auto'>
                     <h2 className='text-black text-center'>
-                        A Simple Premise With Countless Benefits
+                        A Simple Premise With Several Benefits
                     </h2>
                     <article ref={refWildcatBanking} className='flex flex-col'>
                         <Carousel>
-                            <CarouselCard title={"Flexible Borrowing for Arbitrary Purposes"} text={"Whether you are a market maker raising inventory, a fund seeking exposure or a DAO diversifying their assets, Wildcat markets can fit your purpose."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
-                            <CarouselCard title={"Eliminate Back-Office Costs on Loans"} text={"The flexibility of Wildcat market parameters combined with full visibility into actions taken and interest accrued can reduce administrative costs."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
-                            <CarouselCard title={"Simple Recording of On-Chain Debt"} text={"The rebasing nature of Wildcat market tokens allows lenders to know exactly how much they are owed at any given time by simply checking their wallet balance."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
-                            <CarouselCard title={"Greater Visibility, Fewer Surprises"} text={"The digital asset industry is underpinned by loans affecting large groups of people with terms known only to a few. Wildcat markets bring these into the light."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
-                            <CarouselCard title={"A Reputational System Bootstrap"} text={"Good-faith engagement with Wildcat markets - without the oversight of a protocol dictating your terms - acts as a signal to identify responsible actors."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
+                            <CarouselCard imageURL='/flexibility.png' title={"Flexible Borrowing, Arbitrary Purposes"} text={"Whether you are a market maker raising inventory, a fund seeking exposure or a DAO diversifying their assets, Wildcat markets can fit your purpose."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
+                            <CarouselCard imageURL='/piggybank.png' title={"Eliminate Back-Office Costs on Loans"} text={"The flexibility of Wildcat market parameters combined with full visibility into actions taken and interest accrued can reduce administrative costs."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
+                            <CarouselCard imageURL='/monitoring.png' title={"Simple Recording of On-Chain Debt"} text={"The rebasing nature of Wildcat market tokens allows lenders to know exactly how much they are owed at any given time by simply checking their balance."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
+                            <CarouselCard imageURL='/visibility.png' title={"Greater Visibility, Fewer Surprises"} text={"The digital asset industry is underpinned by loans affecting large groups of people with terms known only to a few. Wildcat markets bring these into the light."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
+                            <CarouselCard imageURL='/reputation.png' title={"A Reputational System Bootstrap"} text={"Good-faith engagement with Wildcat markets - without the oversight of a protocol dictating your terms - acts as a signal to identify responsible actors."} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
                         </Carousel>
                     </article>
                 </div>
