@@ -121,7 +121,7 @@ export default function Home() {
                                 title={"Borrowers Utilise Credit"}
                                 text={"Borrowers can now utilise a proportion of the credit extended to them, returning assets when called upon by lenders making withdrawal requests."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1200ms"} position={"6"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1500ms"} position={"6"}
                                 title={"The Rest Is Up To You"}
                                 text={"Borrowers can adjust the APR and capacity of their markets according to their needs, subject to existing debt and liquid asset amounts in market reserves."}/>
 
