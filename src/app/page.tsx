@@ -105,15 +105,15 @@ export default function Home() {
                               title={"Borrower Onboarding"}
                               text={"Borrower sends Wildcat an onboarding request, and goes through a protocol KYC process to get an address authorised to deploy markets."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"200ms"} position={"2"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"250ms"} position={"2"}
                                 title={"New Market Deployment"}
                                 text={"Borrowers specify terms of their markets at deployment: APR, maximum to borrow, reserve ratio, withdrawal cycle length, and more."}/>
 
-                  <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"400ms"} position={"3"}
+                  <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"500ms"} position={"3"}
                               title={"Lender Authorisation"}
                               text={"Borrowers determine which addresses can lend to their markets. Wildcat does not constrain the lender selection process, deferring this to the borrower."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"800ms"} position={"4"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"750ms"} position={"4"}
                                 title={"Lenders Deposit Assets"}
                                 text={"Lenders deposit their assets as credit, receiving interest-bearing debt tokens. These tokens are transferable: store/use them however you wish."}/>
 
@@ -121,7 +121,7 @@ export default function Home() {
                                 title={"Borrowers Utilise Credit"}
                                 text={"Borrowers can now utilise a proportion of the credit extended to them, returning assets when called upon by lenders making withdrawal requests."}/>
 
-                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1200ms"} position={"6"}
+                    <FadeInCard scrolledPastHowItWorks={scrolledPastHowItWorks} animationDelay={"1250ms"} position={"6"}
                                 title={"The Rest Is Up To You"}
                                 text={"Borrowers can adjust the APR and capacity of their markets according to their needs, subject to existing debt and liquid asset amounts in market reserves."}/>
 
@@ -274,7 +274,7 @@ export default function Home() {
                                     <li>
                                         <a
                                             href={
-                                                "https://github.com/wildcat-finance/wildcat-whitepaper"
+                                                "https://github.com/wildcat-finance/wildcat-whitepaper/blob/main/whitepaper_v0.2.pdf"
                                             }
                                             target={"_blank"}
                                             rel='noopener noreferrer'
@@ -304,11 +304,6 @@ export default function Home() {
                                         <a href={"https://wildcat-protocol.gitbook.io/wildcat/legal/protocol-ui-privacy-policy"}
                                            target={"_blank"} rel='noopener noreferrer'>
                                             Privacy Policy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
-                                            Service Agreement
                                         </a>
                                     </li>
                                 </ul>
