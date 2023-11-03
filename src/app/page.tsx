@@ -274,7 +274,7 @@ export default function Home() {
                                     <li>
                                         <a
                                             href={
-                                                "https://github.com/wildcat-finance/wildcat-whitepaper"
+                                                "https://github.com/wildcat-finance/wildcat-whitepaper/blob/main/whitepaper_v0.2.pdf"
                                             }
                                             target={"_blank"}
                                             rel='noopener noreferrer'
@@ -304,11 +304,6 @@ export default function Home() {
                                         <a href={"https://wildcat-protocol.gitbook.io/wildcat/legal/protocol-ui-privacy-policy"}
                                            target={"_blank"} rel='noopener noreferrer'>
                                             Privacy Policy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href={"Coming Soon"} target={"_blank"} rel='noopener noreferrer'>
-                                            Service Agreement
                                         </a>
                                     </li>
                                 </ul>
