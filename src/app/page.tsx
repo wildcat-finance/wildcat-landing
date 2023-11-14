@@ -179,7 +179,7 @@ export default function Home() {
             </section>
 
             <section className='bg-[#E9E8DD] text-black px-4 sm:px-8'>
-                <h2 className='text-center'>Transparency And Security As Core Values</h2>
+                <h2 className='text-center'>Transparency And Security By Design</h2>
                 <div className='flex flex-col md:grid grid-cols-12 gap-4 max-w-3xl mx-auto pb-10'>
                     <div className='col-span-12 md:col-span-6 rounded-xl bg-bg-card p-6 md:h-[calc(315px+40px)]'>
                         <p>
@@ -216,7 +216,7 @@ export default function Home() {
                         />
                         <a href='https://wildcat-protocol.gitbook.io/wildcat/security-measures/code-security-reviews'
                            target="_blank">
-                            <button className='bg-black text-white'>Read Reports</button>
+                            <button className='bg-black text-white'>Read More</button>
                         </a>
                     </div>
                 </div>
@@ -246,7 +246,7 @@ export default function Home() {
                         <div className='col-span-6 text-white'>
                             <p>We believe that people should be able to decide who to lend to or borrow from.</p>
                             <p>We believe that people should be able to decide credit terms that suit them.</p>
-                            <p>We believe that people should be trusted with the freedom to transact.</p>
+                            <p>We believe that people should be trusted with the freedom to contract.</p>
                             <p className={"pt-4"}>The Wildcat Protocol - banking, but worse.</p>
                         </div>
                     </div>
@@ -274,7 +274,7 @@ export default function Home() {
                                     <li>
                                         <a
                                             href={
-                                                "https://github.com/wildcat-finance/wildcat-whitepaper/blob/main/whitepaper_v0.2.pdf"
+                                                "https://github.com/wildcat-finance/wildcat-whitepaper/blob/main/whitepaper_v1.0.pdf"
                                             }
                                             target={"_blank"}
                                             rel='noopener noreferrer'
