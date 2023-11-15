@@ -203,15 +203,22 @@ export default function Home() {
                         <img
                             src='/code4rena.png'
                             alt='logo'
-                            width={200}
-                            height={39}
+                            width={150}
+                            height={20}
                             className='py-6'
                         />
                         <img
                             src='/immunefi.png'
                             alt='logo'
-                            width={200}
-                            height={39}
+                            width={150}
+                            height={20}
+                            className='py-6'
+                        />
+                        <img
+                            src='/spherex.png'
+                            alt='logo'
+                            width={150}
+                            height={20}
                             className='py-6'
                         />
                         <a href='https://wildcat-protocol.gitbook.io/wildcat/security-measures/code-security-reviews'
