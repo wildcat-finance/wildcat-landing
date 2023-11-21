@@ -51,9 +51,11 @@ export default function Home() {
                                                           className='text-white'>
                         Documentation
                     </a></div>
-                    <button className='rounded-xl bg-white px-2 sm:px-4 py-1 sm:py-2 text-black min-h-6 text-sm'>
-                        App Soon™
-                    </button>
+                    <a href='https://app.wildcat.finance' target="_blank">
+                        <button className='rounded-xl bg-white px-2 sm:px-4 py-1 sm:py-2 text-black min-h-6 text-sm'>
+                            App [Testnet]
+                        </button>
+                    </a>
                 </div>
             </nav>
 
@@ -89,9 +91,11 @@ export default function Home() {
                                 Become a Borrower
                             </button>
                         </a>
-                        <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-                            App Soon™
-                        </button>
+                        <a href='https://app.wildcat.finance' target="_blank">
+                            <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
+                                App [Testnet]
+                            </button>
+                        </a>
                     </div>
                 </div>
             </section>
