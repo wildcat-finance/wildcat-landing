@@ -51,9 +51,9 @@ export default function Home() {
                                                           className='text-white'>
                         Documentation
                     </a></div>
-                    <a href='https://wildcat-app.netlify.app' target="_blank">
+                    <a href='https://app.wildcat.finance' target="_blank">
                         <button className='rounded-xl bg-white px-2 sm:px-4 py-1 sm:py-2 text-black min-h-6 text-sm'>
-                            App [Testnet]
+                            App
                         </button>
                     </a>
                 </div>
@@ -91,9 +91,9 @@ export default function Home() {
                                 Become a Borrower
                             </button>
                         </a>
-                        <a href='https://wildcat-app.netlify.app' target="_blank">
+                        <a href='https://app.wildcat.finance' target="_blank">
                             <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
-                                App [Testnet]
+                                App
                             </button>
                         </a>
                     </div>
