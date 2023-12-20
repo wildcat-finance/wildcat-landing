@@ -187,10 +187,15 @@ export default function Home() {
                     <h2 className='text-black text-center'>
                         Borrowers Making Use Of Wildcat
                     </h2>
-                    <article ref={refWildcatBanking} className='flex flex-col'>
-                        <Carousel>
-                            <CarouselCard imageURL='/wintermute_logo.png' title={""} text={""} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
-                        </Carousel>
+                    <article ref={refWildcatBanking} className='flex flex-col items-center'>
+                        <div className='items-center'>
+                                <img
+                                    src='/wintermute_logo.png'
+                                    alt='Wintermute Trading'
+                                    width={200}
+                                    height={80}
+                                />
+                        </div>
                     </article>
                 </div>
             </section>
