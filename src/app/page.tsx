@@ -182,6 +182,19 @@ export default function Home() {
                 </div>
             </section>
 
+            <section className='bg-bg-card text-black px-4 sm:px-8 pb-12'>
+                <div className='max-w-7xl mx-auto'>
+                    <h2 className='text-black text-center'>
+                        Borrowers Making Use Of Wildcat
+                    </h2>
+                    <article ref={refWildcatBanking} className='flex flex-col'>
+                        <Carousel>
+                            <CarouselCard imageURL='/wintermute_logo.png' title={""} text={""} scrolledPastWildcatBanking={scrolledPastWildcatBanking} />
+                        </Carousel>
+                    </article>
+                </div>
+            </section>
+
             <section className='bg-[#E9E8DD] text-black px-4 sm:px-8'>
                 <h2 className='text-center'>Transparency And Security By Design</h2>
                 <div className='flex flex-col md:grid grid-cols-12 gap-4 max-w-3xl mx-auto pb-10'>
