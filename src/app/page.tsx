@@ -86,7 +86,7 @@ export default function Home() {
                     </p>
 
                     <div className='flex flex-col md:flex-row gap-4 items-center justify-center'>
-                        <a href='https://rvficirw76q.typeform.com/to/FKBzhnmo' target="_blank">
+                        <a href='https://forms.gle/irca7KeC7ASmkRh16' target="_blank">
                             <button className='rounded-xl bg-white px-4 py-2 text-black min-h-6 text-sm'>
                                 Become a Borrower
                             </button>
