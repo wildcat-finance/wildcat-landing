@@ -151,12 +151,12 @@ export default function Home() {
                     </h2>
                     <span className='text-black text-center py-6'>Find out more as a:</span>
                     <div className='flex flex-row gap-2 sm:gap-6 items-center justify-center pb-20'>
-                        <a href='https://rvficirw76q.typeform.com/to/FKBzhnmo' target="_blank">
+                        <a href='https://forms.gle/irca7KeC7ASmkRh16' target="_blank">
                             <button className='bg-black text-white rounded-full w-[158px] py-2'>
                                 Borrower
                             </button>
                         </a>
-                        <a href='https://rvficirw76q.typeform.com/to/FKBzhnmo' target="_blank">
+                        <a href='https://forms.gle/irca7KeC7ASmkRh16' target="_blank">
                             <button className='bg-black text-white rounded-full w-[158px] py-2'>
                                 Lender
                             </button>
