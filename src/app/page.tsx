@@ -285,7 +285,7 @@ export default function Home() {
                                     <li>
                                         <a
                                             href={
-                                                "https://github.com/wildcat-finance/wildcat-whitepaper/blob/main/whitepaper_v1.0.pdf"
+                                                "https://github.com/wildcat-finance/wildcat-whitepaper/blob/main/whitepaper_v2.0.pdf"
                                             }
                                             target={"_blank"}
                                             rel='noopener noreferrer'
